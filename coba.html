@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coba</title>
+    <style>
+        .container,
+        .container-fluid,
+        .container-xxl,
+        .container-xl,
+        .container-lg,
+        .container-md,
+        .container-sm {
+            width: 100%;
+            padding-right: var(--bs-gutter-x, 0.75rem);
+            padding-left: var(--bs-gutter-x, 0.75rem);
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+
+        @media (min-width: 768px) {
+            .container-md, .container-sm, .container {
+                max-width: 720px;
+            }
+        }
+
+
+
+
+        .form-control {
+            display: block;
+            width: 100%;
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #212529;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+
+            border-radius: 0.25rem;
+
+        }
+
+        .form-control::-webkit-file-upload-button {
+            padding: 0.375rem 0.75rem;
+            margin: -0.375rem -0.75rem;
+            -webkit-margin-end: 0.75rem;
+            margin-inline-end: 0.75rem;
+            color: #212529;
+            background-color: #e9ecef;
+
+        }
+
+
+        .btn-primary2{
+            color: #fff;
+            background-color: #003366;
+            padding: 0.5em 1.5em;
+            outline: none;
+            border: none;
+            border-radius: 1.8em 0em 1.8em 0em;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: inline-block;
+            margin: inherit;
+            font-size: 1rem;
+        }
+
+        h3{
+            padding-top: 80px;
+            padding-left: 400px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<!-- Page Content-->
+<div class="container-fluid p-0">
+    <!-- Department-->
+    <section class="resume-section" id="Course">
+        <div class="resume-section-content">
+            <h3> Course Information </h3>
+
+            <div class="container px-5 my-5">
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="mb-3">
+                        <label class="form-label" for="courseName">Course Name</label>
+                        <input class="form-control" id="courseName" type="text" placeholder="course Name" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="courseName:required">Course Name is required.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="courseId">Course ID</label>
+                        <input class="form-control" id="courseId" type="text" placeholder="course ID" data-sb-validations="required" />
+                        <div class="invalid-feedback" data-sb-feedback="courseId:required">Course ID is required.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="CreditHours">Credit Hours</label>
+                        <input class="form-control" id="CreditHours" type="text" placeholder="Credit Hours" data-sb-validations="required">
+                        <div class="invalid-feedback" data-sb-feedback="CreditHours:required">Credit Hours are required.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="courseDescription">Course Description</label>
+                        <textarea class="form-control" id="courseDescription" type="text" placeholder="course Description" style="height: 10rem;" data-sb-validations="required"></textarea>
+                        <div class="invalid-feedback" data-sb-feedback="courseDescription:required">Course Description is required.</div>
+                    </div>
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            <p>To activate this form, sign up at</p>
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">Error sending message!</div>
+                    </div>
+                    <div class="d-grid">
+                        <button class="btn-primary2" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        </div>
+    </section>
+</div>
+</body>
+</html>
